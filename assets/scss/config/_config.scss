@@ -25,9 +25,9 @@
   --container-color: linear-gradient(-150deg, hsl(0, 0%, 10%), hsl(0, 0%, 15%));
   --container-color-solid: hsl(0, 0%, 20%);
   --preloader-color: linear-gradient(
-    150deg,
-    hsla(0, 0%, 10%, 1),
-    hsla(0, 0%, 20%, 0.9)
+    90deg,
+    hsla(0, 0%, 10%, 0.8),
+    hsla(0, 0%, 20%, 0.8)
   );
 
   --title-color: hsl(0, 0%, 100%);
@@ -43,15 +43,15 @@
 // @@@@@@@@@@@@@@@@@@@@ CHANGE THEME @@@@@@@@@@@@@@@@@@@@
 
 .light-theme {
-  --body-color: linear-gradient(90deg, hsl(0, 0%, 80%), hsl(0, 0%, 90%));
+  --body-color: linear-gradient(90deg, hsl(0, 0%, 90%), hsl(0, 0%, 100%));
   --transparent-color: hsla(0, 0%, 80%, 0.8);
   --transparent-color-hover: hsla(0, 0%, 80%, 1);
-  --container-color: linear-gradient(-150deg, hsl(0, 0%, 60%), hsl(0, 0%, 80%));
-  --container-color-solid: hsl(0, 0%, 62%);
+  --container-color: linear-gradient(-150deg, hsl(0, 0%, 75%), hsl(0, 0%, 95%));
+  --container-color-solid: hsl(0, 0%, 70%);
   --preloader-color: linear-gradient(
-    150deg,
-    hsla(0, 0%, 60%, 1),
-    hsla(0, 0%, 80%, 0.9)
+    90deg,
+    hsla(0, 0%, 60%, 0.8),
+    hsla(0, 0%, 80%, 0.8)
   );
 
   --title-color: hsl(0, 0%, 0%);
@@ -173,7 +173,7 @@ input::placeholder {
   align-items: center;
 
   background: var(--preloader-color);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
 }
 
 .preloader img {
@@ -229,4 +229,19 @@ input::placeholder {
 
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(0, 0%, 40%);
+}
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@ 2K & 4K DISPLAYS @@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@media (min-width: 2048px) {
+  body {
+    zoom: 1.5;
+  }
+}
+
+@media (min-width: 3840px) {
+  body {
+    zoom: 2;
+  }
 }
