@@ -1,0 +1,121 @@
+@media (max-width: 767px) {
+  // @@@@@@@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@@@@@@@
+  .nav__menu {
+    background: var(--container-color);
+    position: fixed;
+    top: 4rem;
+    right: -80%;
+    width: 80%;
+    height: 100%;
+    padding: 2.5rem;
+    transition: 0.3s;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .nav__link {
+    text-transform: uppercase;
+  }
+
+  .nav__toggle,
+  .nav__close {
+    display: flex;
+  }
+
+  .nav__close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .show-nav-menu {
+    right: 0;
+  }
+
+  .blur {
+    filter: blur(10px);
+  }
+
+  .nav__search-form {
+    width: 60%;
+  }
+
+  .log__signin,
+  .log__signup,
+  .log__forgot {
+    padding: 2rem;
+  }
+
+  .log__img {
+    width: 300px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@@@@@@@@@
+  .home__article:nth-of-type(1) {
+    grid-row: unset;
+    grid-column: 1/3;
+  }
+
+  .home__article:nth-of-type(1) img {
+    height: 250px;
+  }
+
+  .home__article-data {
+    padding: 0.8rem 1rem;
+  }
+
+  .home__article-info {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .home__article-title {
+    font-size: 1.3rem;
+  }
+
+  .home__trend {
+    padding: 2rem 1rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@ REVIEW @@@@@@@@@@@@@@@@@@@@@
+  .review__container {
+    grid-template-columns: 1fr;
+  }
+
+  .review__article {
+    flex-direction: column;
+  }
+
+  .review__article-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@ POPULAR @@@@@@@@@@@@@@@@@@@@@
+  .popular__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@ FOOTER @@@@@@@@@@@@@@@@@@@@@
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@ POST @@@@@@@@@@@@@@@@@@@@@
+  .post__author {
+    flex-direction: column;
+  }
+
+  .post__author-img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .post__author-data .post__author-descrption {
+    width: 100%;
+  }
+}

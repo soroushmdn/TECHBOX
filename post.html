@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- @@@@@@@@@@@@@@@@@@@ FAVICON @@@@@@@@@@@@@@@@@@@ -->
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+
+    <!-- @@@@@@@@@@@@@@@@@@@ remixicon.com @@@@@@@@@@@@@@@@@@@ -->
+    <link rel="stylesheet" href="./assets/css/remixicon.css" />
+
+    <!-- @@@@@@@@@@@@@@@@@@@ swiperjs.com @@@@@@@@@@@@@@@@@@@ -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+
+    <!-- @@@@@@@@@@@@@@@@@@@ CSS @@@@@@@@@@@@@@@@@@@ -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <title>TECHBOX</title>
+  </head>
+  <body>
+    <!-- @@@@@@@@@@@@@@@@@ PRELOADER @@@@@@@@@@@@@@@@@ -->
+    <div class="preloader" id="preloader">
+      <img src="./assets/img/logo.png" alt="" />
+    </div>
+
+    <!-- @@@@@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@@@@@ -->
+    <header class="header" id="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="#" class="nav__logo"
+            ><img src="./assets/img/logo.png" alt="" />TECHBOX</a
+          >
+
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list" id="nav-list">
+              <li class="nav__item">
+                <a href="./index.html#home" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="./index.html#latest" class="nav__link">Latest</a>
+              </li>
+              <li class="nav__item">
+                <a href="./index.html#reviews" class="nav__link">Reviews</a>
+              </li>
+              <li class="nav__item">
+                <a href="./index.html#popular" class="nav__link">Popular</a>
+              </li>
+              <li class="nav__item">
+                <a href="./index.html#newsletter" class="nav__link"
+                  >Newsletter</a
+                >
+              </li>
+            </ul>
+
+            <i class="ri-close-line nav__close" id="nav-close"></i>
+          </div>
+
+          <div class="nav__buttons">
+            <i class="ri-search-line" id="search-button"></i>
+            <div class="theme-button" id="theme-button">
+              <i class="ri-sun-line"></i>
+              <i class="ri-moon-line"></i>
+            </div>
+            <i class="ri-user-3-line" id="log-button"></i>
+            <i class="ri-menu-line nav__toggle" id="nav-toggle"></i>
+          </div>
+
+          <!-- @@@@@@@@@@@@@@@@@@@ NAV SEARCH @@@@@@@@@@@@@@@@@@@ -->
+          <div class="nav__search" id="nav-search">
+            <a href="#" class="nav__logo">TECHBOX</a>
+
+            <form action="" class="nav__search-form">
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="What are you looking for ?"
+                class="nav__search-input"
+              />
+              <button class="nav__search-button">
+                <i class="ri-search-line"></i>
+              </button>
+            </form>
+
+            <i
+              class="ri-close-line nav__search-close"
+              id="nav-search-close"
+            ></i>
+          </div>
+
+          <!-- @@@@@@@@@@@@@@@@@@@ USER LOGIN @@@@@@@@@@@@@@@@@@@ -->
+          <div class="log" id="log">
+            <div class="log__signin" id="signin">
+              <i class="ri-close-line log__close"></i>
+
+              <img src="./assets/img/login1.png" alt="" class="log__img" />
+
+              <form action="" class="log__form">
+                <h2 class="log__title">LOGIN</h2>
+
+                <div class="log__inputs">
+                  <div class="log__input">
+                    <i class="ri-user-line"></i>
+                    <input placeholder="Username" type="text" name="" id="" />
+                  </div>
+                  <div class="log__input">
+                    <i class="ri-lock-2-line"></i>
+                    <input
+                      placeholder="Password"
+                      type="password"
+                      name=""
+                      id=""
+                    />
+                  </div>
+                  <button class="log__forgot-button" id="forgot-button">
+                    Forgot password
+                  </button>
+                </div>
+
+                <button class="log__button">Sign In</button>
+                <span class="log__account">
+                  Don't have an account ?
+                  <button class="log__signup-button" id="signup-button">
+                    Sign Up
+                  </button>
+                </span>
+              </form>
+            </div>
+
+            <div class="log__signup" id="signup">
+              <i class="ri-close-line log__close"></i>
+
+              <img src="./assets/img/login2.png" alt="" class="log__img" />
+
+              <form action="" class="log__form">
+                <h2 class="log__title">Create Account</h2>
+                <div class="log__inputs">
+                  <div class="log__input">
+                    <i class="ri-user-line"></i>
+                    <input placeholder="Username" type="text" name="" id="" />
+                  </div>
+                  <div class="log__input">
+                    <i class="ri-at-line"></i>
+                    <input placeholder="Email" type="email" name="" id="" />
+                  </div>
+                  <div class="log__input">
+                    <i class="ri-lock-2-line"></i>
+                    <input
+                      placeholder="Password"
+                      type="password"
+                      name=""
+                      id=""
+                    />
+                  </div>
+                </div>
+                <button class="log__button">Sign Up</button>
+                <span class="log__account">
+                  Already have an Account ?
+                  <button class="log__signin-button signin-button">
+                    Sign in
+                  </button>
+                </span>
+
+                <div class="log__social">
+                  <a href="#"><i class="ri-linkedin-line"></i></a>
+                  <a href="#"><i class="ri-google-line"></i></a>
+                  <a href="#"><i class="ri-twitter-line"></i></a>
+                </div>
+              </form>
+            </div>
+
+            <div class="log__forgot" id="forgot">
+              <i class="ri-close-line log__close"></i>
+
+              <img src="./assets/img/login3.png" alt="" class="log__img" />
+
+              <form action="" class="log__form">
+                <h2 class="log__title">Forgot password</h2>
+                <div class="log__inputs">
+                  <div class="log__input">
+                    <i class="ri-user-line"></i>
+                    <input placeholder="Email" type="email" name="" id="" />
+                  </div>
+                </div>
+                <button class="log__button">Reset Password</button>
+                <span class="log__account">
+                  Do you remember your password ?
+                  <button class="log__signin-button signin-button">
+                    Sign in
+                  </button>
+                </span>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- @@@@@@@@@@@@@@@@@@@ MAIN @@@@@@@@@@@@@@@@@@@ -->
+    <main id="main">
+      <!-- @@@@@@@@@@@@@@@@@@@ POST @@@@@@@@@@@@@@@@@@@ -->
+      <section class="post">
+        <div class="container">
+          <div class="post__container">
+            <h1 class="post__title">
+              VR Still Stinks Because It Doesn't Smell
+            </h1>
+
+            <div class="post__info">
+              <span>Aug 1st 2022</span>
+              <i class="ri-separator"></i>
+              <span>5 Min read</span>
+            </div>
+
+            <img src="./assets/img/home1.jpg" alt="" class="post__img" />
+
+            <div class="post__content">
+              <p>
+                VR STILL STINKS, and its stench has many notes. It reeks of rich
+                white guys, who wildly overfund and consistently overhype the
+                always-on-the-verge-of-a-breakthrough technology. It has a
+                festering funk of entrenched privilege, despite its purveyors’
+                claims that it fosters empathy and inclusion. It’s too expensive
+                and only getting more so. Meta's and the crypto community’s
+                forays into VR stand to make it more putrid. It also, some
+                complain, smells underbaked: In VR, nobody has legs. But perhaps
+                more than anything, the metaverse stinks because it doesn't
+                smell like anything.
+              </p>
+
+              <p>
+                Smell also raises the emotional stakes and situates an
+                experience inside our personal histories. For sight, sound,
+                taste, and touch, a stimulus travels from the sensory organ to
+                the brain’s more evolutionarily recent thalamus, which handles
+                complex processing skills. Smell is different: It’s all old
+                brain. Smells bypass the thalamus, traveling straight from the
+                nose to the olfactory bulbs located behind the spot where
+                eyeglasses rest on your face. This tongue-like protrusion of
+                nerves both processes smells in the brain and is closely
+                entangled with older brain regions, specifically the amygdala,
+                which handles emotions, and the hippocampus, which deals with
+                memory. When an important memory forms, you usually feel
+                emotions. If you’re also smelling something, memory, emotion,
+                and smell will fuse. Hence why smells conjure memories with such
+                startling vividness: the bright, acrid hit of chlorine undercut
+                with stale sweat that situates you unmistakably back in your
+                high school swim team’s locker room; the downy mix of rosewater,
+                burnt toast, and cigarettes that evokes your grandma’s love.
+              </p>
+
+              <blockquote>
+                <i class="ri-double-quotes-l"></i> What does a laser beam or a
+                unicorn smell like ? <br />
+                We get to invent that.
+                <i class="ri-double-quotes-r"></i>
+              </blockquote>
+
+              <p>
+                Among the few who smell the sweet smell of victory in VR smells
+                is Aaron Wisniewski, CEO and founder of the olfactory VR
+                manufacturer OVR Technology. Wisniewski draws a timely parallel:
+                “Covid anosmics often say ‘I’m anxious. I’m depressed. I feel
+                like everything’s in black and white and I feel really
+                disconnected to everyone and everything.’ Wow, that sounds a lot
+                like what people experience who spend a lot of time online.” He
+                continues: “Unless we engineer our sense of smell into digital
+                worlds that we are increasingly in, we’re going to suffer a lot
+                of negative consequences psychologically and socially.” OVR
+                Technology aims to close this sensory gap. Its flagship product,
+                the ION, is a snap-in, refillable cartridge with nine chemical
+                compounds that can be mixed into hundreds of different scents
+                and released to the user’s nose via Bluetooth cues. According to
+                Wisniewski, our current VR, with its lopsided emphasis on sight
+                and sound, is “essentially engineering the humanity out of our
+                lives.”
+              </p>
+
+              <div class="post__author">
+                <img
+                  src="./assets/img/author.jpg"
+                  alt=""
+                  class="post__author-img"
+                />
+
+                <div class="post__author-data">
+                  <h2 class="post__author-title">Tim Marshall</h2>
+                  <p class="post__author-descrption">
+                    I was born in 1970 and raised in the suburbs of Cincinnati,
+                    closely adjacent to a hardwood forest, in which I spent much
+                    of my boyhood.In 1995 I began as a columnist for Outside
+                    Magazine and continued that role for fifteen years.
+                  </p>
+                  <div class="post__author-social">
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/"
+                      class="post__author-social-link"
+                      ><i class="ri-instagram-line"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/soroush-karimi-98b65323b/"
+                      class="post__author-social-link"
+                      ><i class="ri-linkedin-line"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://twitter.com/"
+                      class="post__author-social-link"
+                      ><i class="ri-twitter-line"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- @@@@@@@@@@@@@@@@@@@ FOOTER @@@@@@@@@@@@@@@@@@@ -->
+    <footer class="footer section" id="footer">
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__content">
+            <a href="#" class="footer__logo"
+              ><img src="./assets/img/logo.png" alt="" />TECHBOX
+              <div class="footer__line"></div>
+            </a>
+
+            <p class="footer__description">
+              TECHBOX is where tomorrow is realized. <br />
+              It is the essential source of <br />
+              information and ideas.
+            </p>
+
+            <div class="footer__social">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/"
+                class="footer__social-link"
+                ><i class="ri-instagram-line"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/soroush-karimi-98b65323b/"
+                class="footer__social-link"
+                ><i class="ri-linkedin-line"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://twitter.com/"
+                class="footer__social-link"
+                ><i class="ri-twitter-line"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/"
+                class="footer__social-link"
+                ><i class="ri-youtube-line"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer__content">
+            <h3 class="footer__title">
+              Contact
+              <div class="footer__line"></div>
+            </h3>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Advertise</a></li>
+              <li><a href="#" class="footer__link">Contact Us</a></li>
+              <li><a href="#" class="footer__link">Costomer Care</a></li>
+              <li><a href="#" class="footer__link">Jobs</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__content">
+            <h3 class="footer__title">
+              Company
+              <div class="footer__line"></div>
+            </h3>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">F.A.Q</a></li>
+              <li><a href="#" class="footer__link">Authors</a></li>
+              <li><a href="#" class="footer__link">Memberships</a></li>
+              <li><a href="#" class="footer__link">Pricing</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__content">
+            <h3 class="footer__title">
+              Resources
+              <div class="footer__line"></div>
+            </h3>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Templates</a></li>
+              <li><a href="#" class="footer__link">Help Center</a></li>
+              <li><a href="#" class="footer__link">Use Cases</a></li>
+              <li><a href="#" class="footer__link">TECHBOX Academy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__group">
+          <p class="footer__copy">
+            &copy; 2022 coded & design by
+            <a target="_blank" href="https://github.com/soroushmdn"
+              >Soroush Karimi.</a
+            >
+          </p>
+
+          <div class="footer__terms">
+            <a href="#">Terms & Agreements</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- @@@@@@@@@@@@@@@@@@@ SCROLLUP @@@@@@@@@@@@@@@@@@@ -->
+    <a href="#" class="scrollup" id="scrollup">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-- @@@@@@@@@@@@@@@@@@@ swiperjs.com @@@@@@@@@@@@@@@@@@@ -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!-- @@@@@@@@@@@@@@@@@@@ typewriter(breaking news) @@@@@@@@@@@@@@@@@@@ -->
+    <script src="./assets/js/typewriter.js"></script>
+
+    <!-- @@@@@@@@@@@@@@@@@@@ JS @@@@@@@@@@@@@@@@@@@ -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+// @@@@@@@@@@@@@@@@@@@@ FONTS @@@@@@@@@@@@@@@@@@@@
+
+@font-face {
+  font-family: '300';
+  src: url('../fonts/Roboto_Condensed/RobotoCondensed-Light.ttf');
+}
+@font-face {
+  font-family: '400';
+  src: url('../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf');
+}
+@font-face {
+  font-family: '700';
+  src: url('../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf');
+}
+
+// @@@@@@@@@@@@@@@@@@@@ VARIABLES @@@@@@@@@@@@@@@@@@@@
+
+:root {
+  --normal-font-size: 1rem;
+
+  --first-color: hsl(209, 91%, 45%);
+  --body-color: linear-gradient(90deg, hsl(0, 0%, 10%), hsl(0, 0%, 20%));
+  --transparent-color: hsla(0, 0%, 15%, 0.7);
+  --transparent-color-hover: hsla(0, 0%, 15%, 1);
+  --container-color: linear-gradient(-150deg, hsl(0, 0%, 10%), hsl(0, 0%, 15%));
+  --container-color-solid: hsl(0, 0%, 20%);
+  --preloader-color: linear-gradient(
+    150deg,
+    hsla(0, 0%, 10%, 1),
+    hsla(0, 0%, 20%, 0.9)
+  );
+
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 60%);
+}
+
+@media (max-width: 992px) {
+  :root {
+    --normal-font-size: 0.9rem;
+  }
+}
+
+// @@@@@@@@@@@@@@@@@@@@ CHANGE THEME @@@@@@@@@@@@@@@@@@@@
+
+.light-theme {
+  --body-color: linear-gradient(90deg, hsl(0, 0%, 80%), hsl(0, 0%, 90%));
+  --transparent-color: hsla(0, 0%, 80%, 0.8);
+  --transparent-color-hover: hsla(0, 0%, 80%, 1);
+  --container-color: linear-gradient(-150deg, hsl(0, 0%, 60%), hsl(0, 0%, 80%));
+  --container-color-solid: hsl(0, 0%, 62%);
+  --preloader-color: linear-gradient(
+    150deg,
+    hsla(0, 0%, 60%, 1),
+    hsla(0, 0%, 80%, 0.9)
+  );
+
+  --title-color: hsl(0, 0%, 0%);
+  --text-color: hsl(0, 0%, 40%);
+}
+
+.light-theme .ri-sun-line {
+  display: none;
+}
+
+.light-theme .ri-moon-line {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .light-theme .nav__menu {
+    background-color: hsl(0, 0%, 85%);
+  }
+}
+
+// @@@@@@@@@@@@@@@@@@@@ BASE @@@@@@@@@@@@@@@@@@@@
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: '400';
+  font-size: var(--normal-font-size);
+  background: var(--body-color);
+  color: var(--text-color);
+  transition: 0.5s;
+}
+
+main {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: '700';
+  line-height: 1.2;
+  color: var(--title-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  font-family: '300';
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+input::placeholder {
+  color: var(--text-color);
+}
+
+// @@@@@@@@@@@@@@@@@@@@  REUSABLE CLASSES @@@@@@@@@@@@@@@@@@@@
+
+.container {
+  max-width: 1200px;
+  width: calc(100% - 3rem);
+  margin: 0 auto;
+}
+
+.section {
+  padding: 5rem 0 2rem;
+}
+
+.section-title {
+  margin-bottom: 3rem;
+  position: relative;
+  width: max-content;
+  font-size: 2rem;
+}
+
+.section-title span {
+  position: absolute;
+  top: 1.3rem;
+  left: 1.5rem;
+  z-index: -1;
+
+  width: max-content;
+  font-size: 2.3rem;
+  color: var(--container-color-solid);
+}
+
+// @@@@@@@@@@@@@@@@@@@@@ PRELOADER @@@@@@@@@@@@@@@@@@@@@
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--preloader-color);
+  backdrop-filter: blur(10px);
+}
+
+.preloader img {
+  width: 50px;
+
+  animation: preloader 3s linear infinite;
+}
+
+@keyframes preloader {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// @@@@@@@@@@@@@@@@@@@@@ SCROLL UP @@@@@@@@@@@@@@@@@@@@@
+
+.scrollup {
+  position: fixed;
+  bottom: -30%;
+  right: 2rem;
+  z-index: 99;
+
+  background-color: var(--first-color);
+  color: var(--title-color);
+  display: flex;
+  font-size: 1.1rem;
+  padding: 0.4rem;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.scrollup:hover {
+  opacity: 1;
+}
+
+.show-scrollup {
+  bottom: 5rem;
+}
+
+// @@@@@@@@@@@@@@@@@@@@@ SCROLL BAR @@@@@@@@@@@@@@@@@@@@@
+::-webkit-scrollbar {
+  background: hsl(0, 0%, 65%);
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 45%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 40%);
+}

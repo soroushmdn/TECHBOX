@@ -1,0 +1,272 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: 0.3s;
+  background: var(--container-color);
+}
+
+.nav {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 1.3rem;
+  font-family: '700';
+  color: var(--title-color);
+}
+
+.nav__logo img {
+  width: 25px;
+  height: 25px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__link {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+.nav__buttons {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.nav__toggle,
+.nav__close,
+.ri-moon-line {
+  display: none;
+}
+
+.ri-sun-line {
+  display: flex;
+}
+
+.nav__buttons i,
+.nav__close,
+.nav__search-close {
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+// @@@@@@@@@@@@@@@@@@ NAV SEARCH @@@@@@@@@@@@@@@@@@
+
+.nav__search {
+  position: fixed;
+  top: -4rem;
+  left: 0;
+  right: 0;
+  max-width: 1200px;
+  width: calc(100% - 3rem);
+  margin: 0 auto;
+  height: 4rem;
+
+  background: var(--container-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.nav__search-form {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  background: var(--container-color-solid);
+  border-radius: 0.2rem;
+  width: 40%;
+}
+
+.nav__search-input {
+  padding: 0.5rem;
+  background-color: transparent;
+  width: 100%;
+}
+
+.nav__search-input::placeholder {
+  font-family: '300';
+  color: var(--text-color);
+}
+
+.nav__search-button {
+  display: flex;
+  padding: 0.5rem;
+  color: var(--text-color);
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.show-nav-search {
+  top: 0;
+}
+
+.nav__link:hover,
+.nav__buttons i:hover,
+.nav__close:hover,
+.nav__search-close:hover,
+.nav__search-button:hover {
+  color: var(--title-color);
+}
+
+// @@@@@@@@@@@@@@@@@@ LOG @@@@@@@@@@@@@@@@@@
+
+.log {
+  background-color: hsla(209, 91%, 5%, 0.8);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+.log__signin,
+.log__signup,
+.log__forgot {
+  background: var(--container-color);
+  position: relative;
+
+  // display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 4rem;
+
+  border-radius: 0.2rem;
+  padding: 3rem 4rem;
+
+  display: none;
+  animation: log 1s;
+}
+
+@keyframes log {
+  0% {
+    clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+  }
+  100% {
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  }
+}
+
+.log__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  color: var(--title-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.log__img {
+  width: 370px;
+}
+
+.log__form {
+  display: grid;
+  justify-items: center;
+  row-gap: 1.5rem;
+  width: 100%;
+}
+
+.log__title {
+  font-size: 2rem;
+}
+
+.log__inputs {
+  display: grid;
+  row-gap: 0.7rem;
+  width: 100%;
+}
+
+.log__input {
+  background: var(--container-color-solid);
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+}
+
+.log__input i {
+  color: var(--first-color);
+}
+
+.log__forgot-button {
+  justify-self: end;
+  transition: 0.3s;
+}
+
+.log__forgot-button:hover {
+  color: var(--first-color);
+}
+
+.log__button {
+  background-color: var(--first-color);
+  color: var(--title-color);
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  transition: 0.3s;
+}
+
+.log__button:hover {
+  background-color: hsl(209, 91%, 38%);
+}
+
+.log__signup-button,
+.log__signin-button {
+  color: var(--first-color);
+}
+
+.log__social {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.log__social i {
+  color: var(--first-color);
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+.log__social i:hover {
+  color: var(--title-color);
+}
+
+.show-log {
+  visibility: visible;
+  opacity: 1;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-grid {
+  display: grid;
+}

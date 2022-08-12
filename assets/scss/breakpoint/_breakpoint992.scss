@@ -1,0 +1,63 @@
+@media (max-width: 992px) {
+  // @@@@@@@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@@@@@@@
+  .nav__list {
+    gap: 1.5rem;
+  }
+
+  .nav__search-form {
+    width: 50%;
+  }
+
+  .log__signin,
+  .log__signup,
+  .log__forgot {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@@@@@@@@@
+  .home__container {
+    grid-template-columns: 1fr;
+  }
+
+  .home__trend {
+    padding: 2rem 1.2rem;
+  }
+
+  .home__trend-img img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .home__trend-info {
+    column-gap: 0.3rem;
+    font-size: 0.9rem;
+  }
+
+  .home__trend-title {
+    font-size: 1.3rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@ LATEST @@@@@@@@@@@@@@@@@@@@@
+  .latest__article-img {
+    height: 300px;
+  }
+
+  .latest__article-title {
+    font-size: 1.3rem;
+  }
+
+  .latest__article-info {
+    margin-bottom: 0.5rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@ REVIEW @@@@@@@@@@@@@@@@@@@@@
+  .review__article-img {
+    width: 150px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@ POST @@@@@@@@@@@@@@@@@@@@@
+  .post__content {
+    width: 100%;
+  }
+}

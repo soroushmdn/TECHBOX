@@ -1,0 +1,51 @@
+@media (max-width: 374px) {
+  // @@@@@@@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@@@@@@@
+
+  .nav__logo {
+    font-size: 1.1rem;
+  }
+
+  .nav__search-input::placeholder {
+    font-size: 0.7rem;
+  }
+
+  .log__signin,
+  .log__signup,
+  .log__forgot {
+    padding: 1.5rem;
+    width: 90%;
+    gap: 0;
+  }
+
+  .log__img {
+    width: 150px;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@ HOME @@@@@@@@@@@@@@@@@@@@@
+  .home__trend-info {
+    font-size: 0.75rem;
+  }
+
+  // @@@@@@@@@@@@@@@@@@@@@ NEWSLETTER @@@@@@@@@@@@@@@@@@@@@
+  .newsletter__caption,
+  .newsletter__content {
+    padding: 1.5rem 0.7rem;
+  }
+
+  .newsletter__description {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .newsletter__input {
+    padding: 0.8rem 3.5rem 0.8rem 0.5rem;
+  }
+
+  .newsletter__button {
+    padding: 0.5rem 0.7rem;
+  }
+
+  .newsletter__terms {
+    font-size: 0.55rem;
+  }
+}
