@@ -8,7 +8,7 @@
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
   gap: 2rem;
 
-  border-bottom: 1px solid var(--container-color-light);
+  border-bottom: 1px solid var(--container-color-solid);
   padding-bottom: 5rem;
 }
 
@@ -64,8 +64,8 @@
 
 .footer__line {
   width: 100%;
-  height: 2px;
-  background-color: var(--container-color-light);
+  height: 1px;
+  background-color: var(--container-color-solid);
 }
 
 .footer__list {
@@ -90,6 +90,9 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
+}
+
+.footer__copy {
   font-size: 0.75rem;
 }
 
@@ -100,6 +103,7 @@
 .footer__terms {
   display: flex;
   gap: 1rem;
+  font-size: 0.7rem;
 
   a {
     color: var(--text-color);
