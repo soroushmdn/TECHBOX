@@ -4,7 +4,7 @@ onload = () => {
 
   setTimeout(() => {
     preloader.style.display = 'none';
-  }, 2500);
+  }, 2000);
 };
 
 // @@@@@@@@@@@@@@@@@@ SHOW navSearch @@@@@@@@@@@@@@@@@@
@@ -138,6 +138,11 @@ const latestSwiper = new Swiper('.latest__swiper', {
   spaceBetween: 15,
   loop: 'true',
   slidesPerView: 'auto',
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
 
   navigation: {
     nextEl: '.swiper-button-next',
