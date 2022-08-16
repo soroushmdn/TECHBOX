@@ -139,10 +139,10 @@ const latestSwiper = new Swiper('.latest__swiper', {
   loop: 'true',
   slidesPerView: 'auto',
 
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
 
   navigation: {
     nextEl: '.swiper-button-next',
