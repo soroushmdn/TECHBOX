@@ -1,5 +1,4 @@
-# ![logo](https://user-images.githubusercontent.com/95019708/185638735-fd7a9df3-9bc1-4226-8dba-8c73d6b9ab33.png)
- TECHBOX
+# ![logo](https://user-images.githubusercontent.com/95019708/185638735-fd7a9df3-9bc1-4226-8dba-8c73d6b9ab33.png) TECHBOX
   Responsive Technology Blog Design
 
 - Responsive Technology Blog Design Using HTML CSS & JavaScript
